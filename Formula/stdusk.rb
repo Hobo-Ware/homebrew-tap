@@ -7,7 +7,8 @@ class Stdusk < Formula
   sha256 "8ce5efa57a6f7db22efd923776732c92cc4102b42391930c42025f4f12cbb79d"
 
   def install
-    prefix.install "stdusk.app"
+    # Homebrew strips the single top-level dir, landing us inside stdusk.app/. Rebuild the bundle.
+    (prefix/"stdusk.app").install "Contents"
     bin.install_symlink prefix/"stdusk.app/Contents/MacOS/stdusk"
   end
 
