@@ -1,8 +1,8 @@
 cask "stdusk" do
-  version "0.1.0"
-  sha256 "8ce5efa57a6f7db22efd923776732c92cc4102b42391930c42025f4f12cbb79d"
+  version "0.1.1"
+  sha256 "be0801d07b49b113cb0bbf6fe6b383da7f53f960754ec1633481529551ddd8cf"
 
-  url "https://github.com/Hobo-Ware/stdusk/releases/download/stdusk-v#{version}/stdusk-#{version}-universal.app.zip"
+  url "https://github.com/Hobo-Ware/stdusk/releases/download/stdusk-v0.1.1/stdusk-0.1.1-universal.app.zip"
   name "stdusk"
   desc "Native Rust quake terminal with a real GUI tab bar and ambient AI-CLI awareness"
   homepage "https://github.com/Hobo-Ware/stdusk"
@@ -11,8 +11,8 @@ cask "stdusk" do
   binary "#{appdir}/stdusk.app/Contents/MacOS/stdusk"
 
   postflight do
-    # Build is ad-hoc signed, not notarized. Strip the quarantine flag so macOS Gatekeeper does
-    # not hard-block the GUI launch. Proper fix is Developer ID signing + notarization.
+    # Ad-hoc signed, not notarized: strip quarantine so Gatekeeper doesn't hard-block the
+    # GUI launch. Proper fix is Developer ID signing + notarization.
     system_command "/usr/bin/xattr",
                    args: ["-dr", "com.apple.quarantine", "#{appdir}/stdusk.app"]
   end
