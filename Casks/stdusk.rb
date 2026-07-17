@@ -10,5 +10,12 @@ cask "stdusk" do
   app "stdusk.app"
   binary "#{appdir}/stdusk.app/Contents/MacOS/stdusk"
 
+  postflight do
+    # Build is ad-hoc signed, not notarized. Strip the quarantine flag so macOS Gatekeeper does
+    # not hard-block the GUI launch. Proper fix is Developer ID signing + notarization.
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/stdusk.app"]
+  end
+
   zap trash: "~/.config/stdusk"
 end
