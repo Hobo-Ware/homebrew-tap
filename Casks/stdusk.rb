@@ -1,8 +1,8 @@
 cask "stdusk" do
-  version "0.1.4"
-  sha256 "ea7e4b725f321e6180099d3d735b2047b5415964331eb0954bb1b0fb9e0933b3"
+  version "0.1.5"
+  sha256 "762a865a7a38240b8e34fdd42ec047eec4b17f08a62c221a146a7ac0f17ea6c8"
 
-  url "https://github.com/Hobo-Ware/stdusk/releases/download/stdusk-v0.1.4/stdusk-0.1.4-universal.app.zip"
+  url "https://github.com/Hobo-Ware/stdusk/releases/download/stdusk-v0.1.5/stdusk-0.1.5-universal.app.zip"
   name "stdusk"
   desc "Native Rust quake terminal with a real GUI tab bar and ambient AI-CLI awareness"
   homepage "https://github.com/Hobo-Ware/stdusk"
