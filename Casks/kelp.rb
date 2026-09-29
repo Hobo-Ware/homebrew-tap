@@ -1,8 +1,8 @@
 cask "kelp" do
-  version "0.8.1"
-  sha256 "5d4e72b6d32183fb921603ff805666c0781f3324fd693659ea3c8a228a8281ae"
+  version "0.8.2"
+  sha256 "fd959a5455a8f77234d5c02df5281613c08640ce90924344f32e801b73122c3e"
 
-  url "https://github.com/Hobo-Ware/kelp/releases/download/v0.8.1/kelp-0.8.1-universal.app.zip"
+  url "https://github.com/Hobo-Ware/kelp/releases/download/v0.8.2/kelp-0.8.2-universal.app.zip"
   name "Kelp"
   desc "Fast, low-power git client with a beautiful commit graph"
   homepage "https://kelp.hoboware.dev"
