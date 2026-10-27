@@ -1,6 +1,6 @@
 cask "tidewatch" do
-  version "0.1.38"
-  sha256 "47c48ab22ea97bb5fd0f3a4934bae6b534dd5ae51155f0fb46f4455ae8406a8b"
+  version "0.1.39"
+  sha256 "b35a9ba3c99e194bc391c4c38019bdec0749906378ba17d472b4427731a62149"
 
   url "https://github.com/Hobo-Ware/tidewatch/releases/download/v#{version}/tidewatch-#{version}-universal.app.zip"
   name "Tidewatch"
